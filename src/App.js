@@ -1,14 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
-import Form from './Form';
-
-function App() {
+import Form from "./Form";
+import "./App.css";
+var UserIsLoggedIn = false;
+export default function App() {
   return (
-    <div className="container">
-<h1>Login</h1>
-      <Form/>
-    </div>
+    <div className="container">{<Form isRegistered={UserIsLoggedIn} />}</div>
   );
 }
-
-export default App;
